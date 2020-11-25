@@ -1,9 +1,190 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="bygg din nya hemsida med oss på hemsida.ny">
+    <meta name="keywords" content="lektion 1, ec, utbildning, html, css">
+    <meta name="author" content="Ec utbildning">
+    <title>Lektion 2 - Genomgång av element</title>
+
+    <style>
+        .border {
+            border: 1px solid black;
+        }
+        .custom-class{
+            background: rgb(129, 129, 129);
+        }
+
+        /* medium devices(tablets, 768px and up) */
+        @media(min-width: 768px){
+            .custom-class{
+                background: rgb(59, 139, 59);
+            }
+        }
+        /* Large devices(desktop, 992px and up) */
+        @media (min-width: 992px){
+            .custom-class{
+                background: rgb(53, 53, 168);
+            }
+        }
+
+        /* Extra large devices (large desktops 1200px and up) */
+        @media(min-width: 1200px) {
+            .custom-class{     
+                 background: rgb(122, 122, 85);
+            }
+        }
+        /* Extra Extra large devices (large desktops 1400px and up) */
+        @media(min-width: 1400px) {
+            .custom-class{     
+                 background: rgb(129, 69, 126);
+            }
+        }
+
+    </style>
+
+</head>
+<body class="custom-class">
+
+    <!-- BLOCK ELEMENT -->
+    <!-- tar upp hela bredden -->
+    <section class="border ">Section</section>
+    <header class="border">Header</header>
+    <footer class="border">Footer</footer>
+    <main class="border">Main</main>
+    <nav class="border">Nav</nav>
+    <aside class="border">Aside</aside>
+    <div class="border">Div</div>
+    <!-- alla ovanför beter sig på samma sätt fast är olika för att kunna förklara sig själva i koden -->
+    <p class="border">Paragraf</p>
+
+    <h1 class="border">H1</h1>
+    <h2 class="border">H2</h2>
+    <h3 class="border">H3</h3>
+    <h4 class="border">H4</h4>
+    <h5 class="border">H5</h5>
+    <h6 class="border">H6</h6>
+    <!-- för sökmotoroptimering så ska man ha det viktigaste i h1 osv för att tex google ska läsa det med mest vikt.
+    de läser även html documentet uppefrån och ner så mest vikt högst upp i documentet. -->
+
+    <hr>
+    <!-- hr är ett radbryt med ett sträck -->
+    <br>
+    <!-- br är ett radbryt utan ett sträck -->
+
+
+    <!-- INLINE ELEMENT -->
+    <i class="border">italic</i>
+    <em class="border">emphasize</em> <!--sökmotoroptimering läger även vikt över italic -->
+    <b class="border">bold</b>
+    <strong class="border">strong</strong> <!--sökmotoroptimering läger även vikt över bold-->
+    <u class="border">underline</u>
+    <ins class="border">inserted</ins>
+    <span class="border">span</span>
+    <small class="border">small</small>
+    <del class="border">del</del>
+    <s class="border">S</s>
+
+    <a class="border" href="https://www.google.se/" target="_blank">En länk till Googlek</a>
+    <!-- a elementer är för att skapa en länk något klickbart som tar dig till något annat -->
+    <!-- targer="blank" gör så länken öppnas i en nya flik -->
+
+    <!-- BILDER källan pexels.com-->
+
+    <img src="enbildsomintefinns.png" alt="beskrivande text för screenreaders eller bild tex saknas">
+
+    <div class="border">
+    <img width="200px" src="https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="En audi R8 på en parkering">
+    </div>
+
+    <img height="200px" src="img/pexels-photo-2365572.jpeg" alt="en gul mecerdes AMG Gtr">
+
+<!--LISTOR -->
+
+    <ul class="border">
+        <li>unordered list item</li>
+        <li class="border">unorded list item</li>
+        <li>unorded list item</li>
+    </ul>
+
+    <ol class="border">
+        <li>orderd list item</li>
+        <li class="border">orderd list item</li>
+        <li>orderd list item</li>
+
+    </ol>
+
+    <!-- TABLE -->
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+                <th>Header 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>column 1</td>
+                <td>column 2</td>
+                <td>column 3</td>
+            </tr>
+            <tr>
+                <td>column 1</td>
+                <td>column 2</td>
+            </tr>
+        </tbody>
+    </table>
+ <!-- används inte så mycket längre men bra att kunna och veta om ifall man jobbar på äldre projekt. -->
+
+
+
+
+<!-- parent child relation  -->
+
+<!-- bra struktur det är detta vi vill eftersträva -->
+<div>
+    <div>
+        <div>
+            <p>hej</p>
+        </div>
+        <div>
+            <p>hej hej</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- dålig struktur vi vill undvika -->
+<div>
+<div>
+<div>
+<p>hej</p>
+</div>
+<div>
+<p>hej hej</p>
+</div>
+</div>
+</div>
+
+
+<!-- vad håller du på med struktur -->
+
+<div>
+                    <div>
+    <div>
+                    <p>hej</p>
+                 </div>
+<div>
+                                        <p>hej hej</p>
+    </div>
+</div>
+    </div>
+
+
+
+
+</body>
 </html>
