@@ -1,0 +1,8 @@
+log.txt
+#ignorerar en specifil fil att pusha till github
+
+#     *.tex
+#ignorerar alla .txt filer
+
+/mappnamn
+#ignore en hel folder
