@@ -10,7 +10,7 @@
 </head>
 <body>
    <div class="container mt-5">
-        <form><!-- <form action="page.php" method="GET"> -->
+        <form id="regForm" action="thanks.html"><!-- <form action="page.php" method="GET"> -->
        <!-- 
            GET - Skickar datan i Url, funkar när man söker efter någonting eller när hämtar information.
                 Men absolut INTE känslig data som lösenord mm.
@@ -27,8 +27,74 @@
         
            Dom här valen brukar man hanter med Javascript istället för då får vi bättre kontroll.
         -->
-            <label for="firstname">First name</label>
-            <input type="text" id="firstame" name="firstname">
+            <div class="form-group">
+                <label for="firstname">First name:</label>
+                <input type="text" class="form-control" id="firstame"name="firstname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" name="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" name="password" id="password">
+            </div>
+            
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" class="form-control" name="age" id="age" min="1" max="5">
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" class="form-control" name="date" id="date">
+            </div>
+
+            <!-- SELECT -->
+            <div class="form-group">
+                <label for="role">Role:</label>
+                <select name="role" id="role" class="form-control">
+                    <option value="" disabled selected></option>
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                    <option value="opt-3">Guest</option>
+                </select>
+            </div>
+
+            <!-- RADIOBUTTONS -->
+            <p>Gender:</p>
+            <div class="form-group">
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">female</label>
+
+                <input type="radio" name="gender" id="other" value="other">
+                <label for="other">other</label>
+            </div>
+
+            <!-- CHECKBOXES -->
+            <div class="form-group">
+                <div class="terms form-check" >
+                    <input type="checkbox" class="form-check-input" name="terms" id="terms" required>
+                    <label for="terms" class="form-check-label">I have read and agree to the terms and conditions</label>
+                </div>
+                <div class="news" >
+                    <input type="checkbox" name="news" id="news" checked>
+                    <label for="news">I would like to subscribe to the newsletter</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message: </label>
+                <br>
+                <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Enter message..."></textarea>
+            </div>
+
+            <input class="btn btn-primary" type="submit" value="Submit">
+            <button class="btn btn-primary">Submit</button>
         </form>
    </div>
    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
