@@ -1,0 +1,28 @@
+@import "../default.css";
+
+#primary-section,
+#secondary-section {
+    flex: 1;
+}
+#primary-section {
+    order: 2;
+}
+#secondary-section {
+    order: 1;
+    flex-direction: column;
+}
+.box {
+    flex: 1;
+    padding: 1.5rem;
+}
+
+#primary-section .box:nth-child(1) {
+    background-color: aqua;
+    color: rgb(70, 70, 70);
+}
+#secondary-section .box:nth-child(1) {
+    background-color: #9ec9d9;
+}
+#secondary-section .box:nth-child(2) {
+    background-color: #83aabd;
+}

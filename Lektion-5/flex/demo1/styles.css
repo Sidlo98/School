@@ -1,0 +1,5 @@
+@import "../default.css";
+
+.d-flex  {
+    justify-content: space-between;
+}
