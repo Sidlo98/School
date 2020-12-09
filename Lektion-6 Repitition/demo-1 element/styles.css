@@ -1,0 +1,24 @@
+* {
+  border: 1px solid #333;
+}
+html,
+body {
+  border: none;
+}
+.whitespace {
+  height: 500px;
+  border: none;
+}
+/* inline element går inte att styla i alla led, då kan vi använda inline-block som är en kombination av båda */
+a {
+  /* margin: 1rem; */
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+}
