@@ -1,0 +1,26 @@
+/* .carousel-item {
+  height: 600px;
+} */
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 600px;
+}
+.next-arrow {
+  color: aqua;
+  font-size: 3rem;
+}
+.carousel-control-next {
+  text-decoration: none;
+  opacity: 0;
+}
+.carousel-control-next:hover {
+  opacity: 1;
+  background-color: black;
+}
+.carousel-caption {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -30%);
+  color: aqua;
+}

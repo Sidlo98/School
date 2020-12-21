@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1120px;
+  margin: auto;
+  padding: 0 1rem;
+}
+.btn {
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: transparent;
+  outline: none;
+}
+.btn-primary {
+  color: #fff;
+  background-color: rgb(255, 0, 0);
+}
+
+#appointment {
+  background-color: rgb(61, 13, 105);
+  color: #e4e4e4;
+  padding: 2rem;
+}
+#appointment .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#appointment i {
+  font-size: 5rem;
+}
+.content {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  #appointment i {
+    display: none;
+  }
+  #appointment .container {
+    justify-content: center;
+  }
+  #appointment {
+    background: darkgreen;
+  }
+}
+@media (max-width: 576px) {
+  #appointment {
+    display: none;
+  }
+  body {
+    background-color: #000;
+  }
+}
